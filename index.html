@@ -1,81 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>My Resume</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./02.png">
+    <title>Kushal Kongara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a">K</i>
+                    <div class="logo-text">Kushal Kongara</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="./01.JPG" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Kushal Kongara</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum 
+                        quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo, 
+                        autem molestiae!
+                    </p>
 
-<h1>KONGARA KUSHAL</h1>
-<img src="./images/Kongara_Kushal.JPG" alt="Profile photo" width="200" height="200">
-<h2>SUMMARY</h2>
-<p>Proficient in Spring Boot, Java, and MySQL through full-time roles and master’s studies. Skilled in Python, Java, and Angular, adept at leveraging emerging technologies effectively.</p>
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
 
-<hr>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
 
-<h2>EDUCATION</h2>
-<ul>
-    <li>San Francisco Bay university, Master of Science in Computer Science	  May 2023 - Present, GPA 3.6</li>
-    <li>Kakatiya Institute of technology and science, CGPA 3.3	    June 2017 – May 2021 Bachelor of Technology in and Mechanical Engineering</li>
-</ul>
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
 
-<hr>
-
-<h2>WORK EXPERIENCE</h2>
-<h3>DispatchTrack- Jr Full stack Developer</h3>
-<ul>
-    <li>Spearheaded the development of a Driver-map feature within a React Redux SPA, facilitating the seamless display of real-time order statuses, distribution centers, and driver locations. Result: Increased operational efficiency by 30%.</li>
-    <li>Implemented the Co-pilot feature, enabling in-delivery drivers to co-manage orders, resulting in a 20% reduction in delivery times.</li>
-    <li>Successfully migrated MongoDB models to Active Record in MySQL, leading to a 22% cost saving by eliminating NoSQL dependencies.</li>
-    <li>Seamlessly integrated Bee Track APIs for route calculations into Dispatch Track APIs, enhancing logistical capabilities. Conducted RSpec tests, achieving a 98% accuracy rate. </li>
-    <li>Leveraged a comprehensive technology stack including Redux, MongoDB, PostgreSQL, AWS, and Redis to drive innovative solutions and achieve project milestones effectively. Result: Consistent achievement of project milestones with a 95% on-time delivery rate.</li>
-</ul>
-
-<hr>
-
-<h2>SKILLS</h2>
-<ul>
-    <li>HTML: ⭐⭐⭐⭐⭐</li>
-    <li>CSS: ⭐⭐⭐⭐⭐</li>
-    <li>JAVA script: ⭐⭐⭐⭐</li>
-    <li>JAVA: ⭐⭐⭐⭐</li>
-</ul>
-
-<hr>
-
-<h2>INTERNSHIPS</h2>
-<h3>Hoping minds: Full-stack development internship</h3>
-<ul>
-    <li>Contributed to the design, development, and maintenance of both front-end and back-end components for web applications, resulting in a 20% increase in overall application performance.</li>
-    <li>Wrote clean, efficient code following best practices, leading to a 25% reduction in code review time and a 30% decrease in bug occurrence.</li>
-    <li>Conducted 1000+ unit tests, resulting in a bug detection rate of 98% and ensuring the reliability and stability of the applications.</li>
-    <li>Supported team members by resolving 200+ technical issues, maintaining a 95% satisfaction rate among colleagues.</li>
-</ul>
-
-<hr>
-
-<h2>PROJECTS</h2>
-<h3>   On-Campus Accommodation (HTML, CSS, JavaScript, bootstrap, Python Flask)</h3>
-<ul>
-    <li>Developed database features that allow 95% of data to be retrieved, inserted, updated, and deleted for more efficient management.</li>
-    <li>Designed 70% of user-friendly interface for seamless access to housing information, utilizing HTML, CSS, JavaScript, and Bootstrap.</li>
-    <li>Utilized MySQL database hosted on a server, ensuring 90% efficiency in data storage and retrieval. </li>
-</ul>
-<h3>Instagram & E-Commerce web app (React JS, Node JS, Express JS, MongoDB)</h3>
-<ul>
-    <li>Developed an Instagram-style web app using React JS, Node JS, Express JS, and MongoDB, contributing to 100% of the frontend development.</li>
-    <li>Ensuring 80% functionality alignment with Instagram, social features, image uploading, and user authentication were implemented.</li>
-</ul>
-
-<hr>
-
-<h2>ACTIVITIES, LEADERSHIP & VOLUNTEERING</h2>
-<ul>
-    <li>Completion of the Software Engineering Virtual experience at JPMorgan Chase & Co with 100% distinction. </li>
-    <li>Volunteered for the live webcast of the poll process in general elections to HOP 2019.</li>
-    <li>Achieved full scholarship for master's degree program with 100% coverage.</li>
-    <li>Volunteered at Spoorthi NGO, raising ₹1,000,000 for education of underprivileged students (2017 - 2021).</li>
-</ul>
-    <li></li>
-</ul>
-
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
